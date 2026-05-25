@@ -1,0 +1,10 @@
+
+> netmanager-frontend@1.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 316 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.121.40.213:5173/
+9:53:16 AM [vite] hmr update /src/App.jsx

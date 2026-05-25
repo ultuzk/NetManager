@@ -1,0 +1,87 @@
+/usr/local/lib/python3.9/site-packages/paramiko/pkey.py:100: CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  "cipher": algorithms.TripleDES,
+/usr/local/lib/python3.9/site-packages/paramiko/transport.py:258: CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  "class": algorithms.TripleDES,
+INFO:     Started server process [1888740]
+INFO:     Waiting for application startup.
+2026-05-25 09:56:38,831 - backend.services.scheduled_backup_service - INFO - 定时备份调度器已启动
+2026-05-25 09:56:38,832 - backend.services.device_monitor_service - INFO - 设备状态监测服务已启动，间隔 300 秒
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:36848 - "POST /api/auth/login/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46266 - "POST /api/auth/login/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58436 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58452 - "GET /api/inspection/records/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58450 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58464 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58480 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58454 - "GET /api/backups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58494 - "GET /api/inspection/records/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58502 - "GET /api/backups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34202 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34204 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34230 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34218 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34254 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34244 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34264 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34272 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34286 - "GET /api/inspection/commands/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34304 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34316 - "GET /api/inspection/commands/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34288 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34320 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34330 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34346 - "GET /api/devices/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34348 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34354 - "GET /api/devices/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34358 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34364 - "GET /api/inspection/records/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34366 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34376 - "GET /api/inspection/records/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34388 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34404 - "GET /api/devices/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34408 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34412 - "GET /api/backups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34416 - "GET /api/scheduled-backups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34426 - "GET /api/devices/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34440 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34452 - "GET /api/backups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34460 - "GET /api/scheduled-backups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55164 - "GET /api/ai/config/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55168 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55170 - "GET /api/ai/analysis-records/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55186 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55172 - "GET /api/ai/config/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55200 - "GET /api/ai/analysis-records/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55214 - "GET /api/ai/config/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55224 - "GET /api/ai/config/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55238 - "GET /api/ai/config/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55252 - "GET /api/ai/config/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39294 - "GET /api/auth/users/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39302 - "GET /api/auth/users/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45398 - "PUT /api/auth/users/1/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45404 - "GET /api/auth/users/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45416 - "GET /api/logs/operations/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45418 - "GET /api/logs/operations/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40452 - "GET /api/logs/connections/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40454 - "GET /api/logs/operations/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40458 - "GET /api/auth/users/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40460 - "GET /api/auth/users/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40464 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40472 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40488 - "GET /api/inspection/records/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40502 - "GET /api/backups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40514 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40520 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40524 - "GET /api/inspection/records/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40536 - "GET /api/backups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39258 - "POST /api/auth/login/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39286 - "GET /api/groups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39274 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39294 - "GET /api/inspection/records/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39296 - "GET /api/backups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39302 - "GET /api/devices/?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39326 - "GET /api/backups/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39316 - "GET /api/inspection/records/?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39308 - "GET /api/groups/ HTTP/1.1" 200 OK
