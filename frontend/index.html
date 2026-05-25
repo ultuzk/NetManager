@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head>
+ <meta charset="UTF-8" />
+ <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="description" content="网络设备统一管理平台，支持华为、H3C、锐捷、Cisco等多种设备类型的管理、巡检和批量操作" />
+ <meta name="keywords" content="网络设备, 设备管理, 巡检, 批量操作, SSH, Telnet" />
+ <title>网络设备统一管理平台</title>
+ <style>
+ :root {
+ --primary-color: #1890ff;
+ --error-color: #f5222d;
+ }
+
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ #loading {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: rgba(255, 255, 255, 0.8);
+ font-size: 18px;
+ color: #666;
+ z-index: 1000;
+ }
+
+ #error {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: #fff;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ max-width: 500px;
+ z-index: 1000;
+ }
+
+ #error h3 {
+ color: var(--error-color);
+ margin-top: 0;
+ }
+
+ /* 自定义滚动条 */
+ ::-webkit-scrollbar {
+ width: 8px;
+ height: 8px;
+ }
+
+ ::-webkit-scrollbar-track {
+ background: #f1f1f1;
+ }
+
+ ::-webkit-scrollbar-thumb {
+ background: #888;
+ border-radius: 4px;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+ background: #555;
+ }
+ </style>
+ </head>
+  <body>
+    <div id="loading">正在加载应用...</div>
+    <div id="root"></div>
+    <div id="error" style="display: none;"></div>
+    
+    <script>
+      // 检测JavaScript错误
+      window.addEventListener('error', function(e) {
+        console.error('JavaScript错误:', e);
+        document.getElementById('loading').style.display = 'none';
+        const errorDiv = document.getElementById('error');
+        errorDiv.style.display = 'block';
+        errorDiv.innerHTML = `
+          <h3>应用加载失败</h3>
+          <p><strong>错误信息:</strong> ${e.message}</p>
+          <p><strong>文件:</strong> ${e.filename}</p>
+          <p><strong>行号:</strong> ${e.lineno}</p>
+          <p><strong>列号:</strong> ${e.colno}</p>
+          <p>请检查浏览器控制台获取详细信息</p>
+        `;
+      });
+      
+      // 检测Promise错误
+      window.addEventListener('unhandledrejection', function(e) {
+        console.error('未处理的Promise错误:', e);
+        document.getElementById('loading').style.display = 'none';
+        const errorDiv = document.getElementById('error');
+        errorDiv.style.display = 'block';
+        errorDiv.innerHTML = `
+          <h3>应用加载失败</h3>
+          <p><strong>错误信息:</strong> ${e.reason}</p>
+          <p>请检查浏览器控制台获取详细信息</p>
+        `;
+      });
+    </script>
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

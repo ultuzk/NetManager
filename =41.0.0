@@ -1,0 +1,6 @@
+WARNING: Running pip install with root privileges is generally not a good idea. Try `pip3 install --user` instead.
+Requirement already satisfied: cryptography in /usr/local/lib64/python3.9/site-packages (48.0.0)
+Requirement already satisfied: cffi>=2.0.0 in /usr/local/lib64/python3.9/site-packages (from cryptography) (2.0.0)
+Requirement already satisfied: typing-extensions>=4.13.2 in /usr/local/lib/python3.9/site-packages (from cryptography) (4.15.0)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.9/site-packages (from cffi>=2.0.0->cryptography) (2.23)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
