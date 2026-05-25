@@ -430,3 +430,5 @@ tail -f frontend.log
 ---
 
 *NetManager © 2026 · 智能网络统一管理平台*
+
+> English version: [README_EN.md](README_EN.md)
